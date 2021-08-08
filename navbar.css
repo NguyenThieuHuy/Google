@@ -1,0 +1,49 @@
+  nav {
+    width: 100%;;
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  .navbar-collapse{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: end;
+    width: 100%;
+  }
+  nav a{
+    color:black;
+    margin: 20px;
+    text-decoration:none;
+    position: relative;
+  }
+
+  #usericon{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 45px;
+  }
+
+  #bottomnav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: arial,sans-serif;
+    justify-content: space-between;
+    -webkit-text-size-adjust: none;
+  }
+
+  @media only screen and (max-height: 500px), (max-width:320px) {
+    #bottomnav{
+      margin-top: 130px;
+      bottom: auto;
+    }
+    #imageslogo{
+      display: flex;
+      left: auto;
+      bottom: auto;
+    }
+  }

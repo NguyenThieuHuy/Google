@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+
+#mike {
+font-size: 25px;
+width: 25px;
+height: 25px;
+cursor:pointer;
+border: none;
+position: absolute;
+margin-left: 5px;
+outline: none;
+background: transparent;
+}
+#txt {
+height: 150px;
+width: 150px;
+}
+</style>
+
+<script>
+var mike = document.getElementById('mike');
+mike.onfocus = mike.blur;
+mike.onwebkitspeechchange = function(e) {
+console.log(e); // SpeechInputEvent
+document.getElementById('txt').value = mike.value;  
+};
+</script>
+</head>
+
+voice button
+document.querySelector("body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.RNNXgb > div > div.dRYYxd > div.XDyW0e")
